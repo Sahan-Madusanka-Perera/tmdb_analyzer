@@ -672,7 +672,7 @@ def display_detailed_metrics(analysis):
         <div class="metric-card {risk_class}">
             <p class="metric-label">Predicted Revenue</p>
             <p class="metric-value">${analysis['predicted_revenue']:,.0f}</p>
-            <small>Risk Level: {analysis['risk_level']}</small>
+            <small style="color:black">Risk Level: {analysis['risk_level']}</small>
         </div>
         """, unsafe_allow_html=True)
 
@@ -681,7 +681,7 @@ def display_detailed_metrics(analysis):
         <div class="metric-card">
             <p class="metric-label">Return on Investment</p>
             <p class="metric-value">{analysis['roi_percentage']:.1f}%</p>
-            <small>Profit: ${analysis['profit']:,.0f}</small>
+            <small style="color:black">Profit: ${analysis['profit']:,.0f}</small>
         </div>
         """, unsafe_allow_html=True)
 
@@ -690,7 +690,7 @@ def display_detailed_metrics(analysis):
         <div class="metric-card">
             <p class="metric-label">Breakeven Multiple</p>
             <p class="metric-value">{analysis['breakeven_multiplier']:.2f}x</p>
-            <small>Confidence: {analysis['confidence_score']:.1f}%</small>
+            <small style="color:black">Confidence: {analysis['confidence_score']:.1f}%</small>
         </div>
         """, unsafe_allow_html=True)
     
